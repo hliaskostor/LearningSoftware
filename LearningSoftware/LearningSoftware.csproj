@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8736FD4D-FECC-40BB-B2D6-45C4F197BBEE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LearningSoftware</RootNamespace>
+    <AssemblyName>LearningSoftware</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+    <Reference Include="Npgsql">
+      <HintPath>..\..\..\..\appdata\local\microsoft\visualstudio\17.0_d51c5482\extensions\awv2231j.z3h\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+    <Reference Include="System.Net.Sockets" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Text.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvClassObj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvClassObj.Designer.cs">
+      <DependentUpon>AdvClassObj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdvInt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvInt.Designer.cs">
+      <DependentUpon>AdvInt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdvList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvList.Designer.cs">
+      <DependentUpon>AdvList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdvMethods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvMethods.Designer.cs">
+      <DependentUpon>AdvMethods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="beginnerClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="beginnerClass.Designer.cs">
+      <DependentUpon>beginnerClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="beginnerInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="beginnerInterface.Designer.cs">
+      <DependentUpon>beginnerInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="beginnerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="beginnerList.Designer.cs">
+      <DependentUpon>beginnerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="beginnerMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="beginnerMethod.Designer.cs">
+      <DependentUpon>beginnerMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="begQuizClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="begQuizClass.Designer.cs">
+      <DependentUpon>begQuizClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassObjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassObjects.Designer.cs">
+      <DependentUpon>ClassObjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassObjQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassObjQuiz.Designer.cs">
+      <DependentUpon>ClassObjQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUser.Designer.cs">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface.Designer.cs">
+      <DependentUpon>Interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="javaDatabase.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>javaDatabase.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="lists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lists.Designer.cs">
+      <DependentUpon>lists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Methods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Methods.Designer.cs">
+      <DependentUpon>Methods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizAdvClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizAdvClass.Designer.cs">
+      <DependentUpon>QuizAdvClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizAdvInt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizAdvInt.Designer.cs">
+      <DependentUpon>QuizAdvInt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizAdvList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizAdvList.Designer.cs">
+      <DependentUpon>QuizAdvList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizAdvMet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizAdvMet.Designer.cs">
+      <DependentUpon>QuizAdvMet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizBegInt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizBegInt.Designer.cs">
+      <DependentUpon>QuizBegInt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizBegList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizBegList.Designer.cs">
+      <DependentUpon>QuizBegList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quizbegMeth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quizbegMeth.Designer.cs">
+      <DependentUpon>quizbegMeth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizInterface.Designer.cs">
+      <DependentUpon>QuizInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizList.Designer.cs">
+      <DependentUpon>QuizList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizMethod.Designer.cs">
+      <DependentUpon>QuizMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reviseQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reviseQuiz.Designer.cs">
+      <DependentUpon>reviseQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserMenu.Designer.cs">
+      <DependentUpon>UserMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartJava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartJava.Designer.cs">
+      <DependentUpon>StartJava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizStartJava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizStartJava.Designer.cs">
+      <DependentUpon>QuizStartJava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userTotal.Designer.cs">
+      <DependentUpon>userTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visits.Designer.cs">
+      <DependentUpon>Visits.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdvClassObj.resx">
+      <DependentUpon>AdvClassObj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvInt.resx">
+      <DependentUpon>AdvInt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvList.resx">
+      <DependentUpon>AdvList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvMethods.resx">
+      <DependentUpon>AdvMethods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="beginnerClass.resx">
+      <DependentUpon>beginnerClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="beginnerInterface.resx">
+      <DependentUpon>beginnerInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="beginnerList.resx">
+      <DependentUpon>beginnerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="beginnerMethod.resx">
+      <DependentUpon>beginnerMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="begQuizClass.resx">
+      <DependentUpon>begQuizClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassObjects.resx">
+      <DependentUpon>ClassObjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassObjQuiz.resx">
+      <DependentUpon>ClassObjQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUser.resx">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface.resx">
+      <DependentUpon>Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lists.resx">
+      <DependentUpon>lists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Methods.resx">
+      <DependentUpon>Methods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizAdvClass.resx">
+      <DependentUpon>QuizAdvClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizAdvInt.resx">
+      <DependentUpon>QuizAdvInt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizAdvList.resx">
+      <DependentUpon>QuizAdvList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizAdvMet.resx">
+      <DependentUpon>QuizAdvMet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizBegInt.resx">
+      <DependentUpon>QuizBegInt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizBegList.resx">
+      <DependentUpon>QuizBegList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quizbegMeth.resx">
+      <DependentUpon>quizbegMeth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizInterface.resx">
+      <DependentUpon>QuizInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizList.resx">
+      <DependentUpon>QuizList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizMethod.resx">
+      <DependentUpon>QuizMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reviseQuiz.resx">
+      <DependentUpon>reviseQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMenu.resx">
+      <DependentUpon>UserMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StartJava.resx">
+      <DependentUpon>StartJava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizStartJava.resx">
+      <DependentUpon>QuizStartJava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userTotal.resx">
+      <DependentUpon>userTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visits.resx">
+      <DependentUpon>Visits.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="javaDatabase.xsc">
+      <DependentUpon>javaDatabase.xsd</DependentUpon>
+    </None>
+    <None Include="javaDatabase.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>javaDatabase.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="javaDatabase.xss">
+      <DependentUpon>javaDatabase.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\java_page-0001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\channels4_profile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\target\Screenshot 2024-06-22 234447.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
